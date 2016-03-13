@@ -37,7 +37,6 @@ alias m='make'
 alias gpp='g++'
 alias gcc='gcc -Wall -O2 -std=c99'
 alias a='./a.out'
-alias emacs='emacs -nw'
 alias f='eval $(thefuck $(fc -ln -1 | tail -n 1)); fc -R'
 
 HISTFILE=~/.zsh_history
