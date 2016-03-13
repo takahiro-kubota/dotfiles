@@ -1,4 +1,5 @@
-export LANG=ja_JP.UTF-8
+export LC_ALL="en_US.UTF-8"
+export LANG="en_US.UTF-8"
 
 setopt prompt_subst
 
@@ -28,16 +29,28 @@ zstyle ':completion:*:default' list-colors ${LS_COLORS}
 setopt complete_aliases
 alias ls='ls --color=auto'
 alias h='history -E -32'
-alias rm='rm -i'
 alias cp='cp -i'
-alias mv='mv -i'
 alias ll='ls -laF --color'
 alias l='less'
 alias m='make'
 alias gpp='g++'
 alias gcc='gcc -Wall -O2 -std=c99'
 alias a='./a.out'
-alias f='eval $(thefuck $(fc -ln -1 | tail -n 1)); fc -R'
+alias g='git'
+alias gf='git flow'
+alias gs='git status -s -b'
+alias gb='git branch --color'
+alias gco='git checkout'
+alias ga='git add'
+alias gl='git log --decorate'
+alias gci='git commit -v'
+alias gst='git stash'
+alias gpul='git pull'
+alias gpsh='git push'
+alias gdif='git diff'
+alias gg='git grep'
+alias grb='git rebase'
+alias gbr='git branch'
 
 HISTFILE=~/.zsh_history
 HISTSIZE=1000000
@@ -72,4 +85,4 @@ kterm*|xterm)
         echo -ne "\033]0;${USER}@${HOST}\007"
     }
     ;;
-esac
+    esac
