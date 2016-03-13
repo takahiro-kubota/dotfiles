@@ -14,9 +14,6 @@ RPROMPT=""
 
 bindkey -e
 
-setxkbmap dvorak
-xmodmap ~/.Xmodmap
-
 autoload -U compinit
 compinit
 

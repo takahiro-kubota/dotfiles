@@ -1,4 +1,4 @@
-DOT_FILES=emacs \
+DOT_FILES=emacs.d \
 	  tmux.conf \
 	  zshrc
 
