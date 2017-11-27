@@ -6,8 +6,8 @@ setopt prompt_subst
 local C0=$'%{\e[00;32m%}'
 local C1=$'%{\e[00;36m%}'
 local C2=$'%{\e[00;39m%}'
-PROMPT="$C0%~ $C1--%D %*--
-$C2%# "
+PROMPT="$C0%~
+$C2$ "
 
 PROMPT2="%B%_>%b "
 SPROMPT="%r is correct? [n,y,a,e]: "
